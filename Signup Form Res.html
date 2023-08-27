@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	body
+	{
+	background-image:url(https://media.istockphoto.com/id/666180940/photo/blurred-of-restaurant-with-bokeh-lights-background-and-wood-table.jpg?s=612x612&w=0&k=20&c=0HoKxzDiHPn8u3DzwOTx3-voueEhHYU3kpltJbZ4Ktc=);
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+	.SignUp
+	{
+	height:100px;
+	width:400px;
+	margin:auto;
+	margin-top:2.5%;
+	color:white;
+	}
+	.home
+	{
+	text-decoration:none;
+    }
+	.btn
+	{
+		background-color: black;
+		color:whitesmoke;
+	}
+	</style>
+<script>
+		sign=()=>
+    {
+    var pass=document.getElementById("pwd").value;
+    var cpass=document.getElementById("cpwd").value;
+    if(pass!=cpass)
+    document.getElementById("btn").textContent=("Please Check your password");
+    else if(pass=="")
+   {
+    document.getElementById("btn").textContent=("Please fill the password");
+   }
+   else
+   {
+    document.getElementById("btn").textContent=("Password is saved");
+    window.open("Index Page Res.html","_blank");
+   }
+   }
+</script>
+	</head>
+	<body>
+	<a href="Index Page Res.html" class="home"><center><h1 style="color:white">Home</h1></center></a>
+	<div class="SignUp">
+	<form>
+	<pre>
+	<center><h1>SIGNUP</h1></center></pre><pre>
+	<h3>First Name             : <input type="text" name="First Name" placeholder="Enter your first name" id="FN" required></pre><pre>
+	<h3>Last Name              : <input type="text" name="last Name"  placeholder="Enter your last name" id="LN" required></pre><pre>
+	<h3>Email id               : <input type="email" name="Email Name" placeholder="Enter your email id" id="EID" required></pre><pre>
+	<h3>Phone Number           : <input type="number"  name="phonenumber Name" placeholder="XXX XXX XXXX"  required></pre><pre>
+	<h3>Password               : <input type="password" name="password"  id="pwd" placeholder="Enter your password"  pattern="(?=.*[!,@,#,$,%,^,&,])(?=.*[A-Z]).{8,15}" title="&#x2022 password must contain minimum of 8 and maximum of 20 characters.
+	&#x2022 password should have atleast one upper case letter.	
+	&#x2022 password should have atleast one lower case letter.
+	&#x2022 password should have atleast one Number.
+	&#x2022 password should have atleast one special character." required></h3></pre><pre>
+	<h3>Conform Password       : <input type="password" id="cpwd"placeholder="Enter your password"  pattern="(?=.*[!,@,#,$,%,^,&,])(?=.*[A-Z]).{8,15}"  required></h3></pre><pre>
+		<div id="btn">
+	<button type="submit" value="SignUp"  class="btn"onclick="sign()">SignUp</button></pre></div>
+	</div>
+	
+	
+	</body>
+	</html>

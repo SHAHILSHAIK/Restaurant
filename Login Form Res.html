@@ -40,16 +40,17 @@
 	<body>
 	<a href="Index Page Res.html" class="home"><center><h1 style="color:white">Home</h1></center></a>
 	<div class="card">
-		<form action="Home Page Res.html">
+		<form action="Home Page Res.html" onsubmit="return check(this)">
 	<pre>
 	<center><h1 style="color:white">User Name : <input type="email"  name="email" placeholder="Enter your Mail" id="UN" required></pre><pre>
 	<center><h1 style="color:white">Password  : <input type="password"  name="password"  placeholder="Enter your Password" id="PW" pattern="(?=.*[!,@,#,$,%,^,&,*])(?=.*[A-Z]).{8,15}" required></pre>
 	<pre>
-		<center><input type="submit" value="Login"  onclick="check()"></center>
+		<center><button type="submit"  onclick="check()">login</button></center>
 	</pre><pre><h1 style="color:white">Create an Account.....?<a href="./signup form res.html" class="signup"><b style="color:red">SignUp</a></h1></pre>
 	</div>
      </form>
 	
 	
 	</body>
+	<script src="script .js"></script>
 	</html>
